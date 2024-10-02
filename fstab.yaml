@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://raw.githubusercontent.com/bosschaert/sling-lambda/refs/heads/main/docs/
+    url: https://bosschaert.github.io/sling-lambda/
     suffix: ".md.html"
     type: markup
