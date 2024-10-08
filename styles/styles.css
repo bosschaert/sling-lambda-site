@@ -256,6 +256,10 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+header {
+  padding-top: 50px;
+}
+
 main {
   display: flex;
 }
