@@ -29,6 +29,17 @@ function buildHeroBlock(main) {
   }
 }
 
+function buildSidebarFragment(main) {
+  if (main.querySelector('h1')?.innerText === 'Releases') {
+    const section = document.createElement('div');
+    section.classList.add('sidenav');
+    const href = document.createElement('a');
+    href.href = '/sidenav';
+    section.append(buildBlock('fragment', { elems: [href] }));
+    main.prepend(section);
+  }
+}
+
 /**
  * load fonts.css and set a session storage flag
  */
@@ -48,6 +59,7 @@ async function loadFonts() {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    buildSidebarFragment(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
