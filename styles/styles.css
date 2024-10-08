@@ -261,5 +261,5 @@ main {
 }
 
 main .sidenav {
-  flex-basis: 0;
+  flex-basis: 350px;
 }
