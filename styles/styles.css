@@ -256,6 +256,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 header {
   padding-top: 50px;
 }
